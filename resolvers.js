@@ -37,8 +37,8 @@ const resolvers = {
         name: name, 
         description: description,
         instructions: instructions,
-         image: image,
-         ingredients: ingredients, 
+        image: image,
+        ingredients: ingredients, 
         quantities: quantities }
       await Recipe.findByIdAndUpdate(id, updatedRecipe,{new:true})
       return updatedRecipe
